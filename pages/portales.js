@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 
-export default function Portales() {
+const Portales = () => {
   return (
     <>
       <Navbar />
-      <div className="hola">
+      <div className='portales'>
         <h1>Portales</h1>
       </div>
     </>
   );
-}
+};
+
+export default Portales;

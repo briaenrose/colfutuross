@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 
-export default function Trabajaconnosotros() {
+const Trabajaconnosotros = () => {
   return (
     <>
       <Navbar />
-      <div className="hola">
-        <h1>Trabaja con Nosotros</h1>
+      <div className='trabajaconnosotros'>
+        <h1>Trabaja con nosotros</h1>
       </div>
     </>
   );
-}
+};
+
+export default Trabajaconnosotros;

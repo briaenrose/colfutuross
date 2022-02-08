@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 
-export default function Propuestabasicaprimaria() {
+const Propuestabasicaprimaria = () => {
   return (
     <>
       <Navbar />
-      <div className="hola">
-        <h1>Propuesta Básica Primaria</h1>
+      <div className='propuestabasicaprimaria'>
+        <h1>Propuesta básica Primaria</h1>
       </div>
     </>
   );
-}
+};
+
+export default Propuestabasicaprimaria;

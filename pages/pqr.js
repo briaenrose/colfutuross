@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 
-export default function Pqr() {
+const Pqr = () => {
   return (
     <>
       <Navbar />
-      <div className="hola">
+      <div className='pqr'>
         <h1>PQR</h1>
       </div>
     </>
   );
-}
+};
+
+export default Pqr;

@@ -17,71 +17,39 @@ const useStyles = makeStyles((theme) => ({
   imageLogo: {},
 
   hamburger: {
+    top: "20px",
+    right: "20px",
     width: "30px",
     height: "3px",
-    background: "#fff",
+    background: "#fcfcfc",
+    position: "absolute",
     borderRadius: "5px",
-    boxShadow: "(0 2px 5px rgb(255, 101, 47, .2)",
-    transition: "all 0.5s ease-in-out",
+    boxShadow: "0 2px 5px rgba(0, 0, 0, .2)",
+    transition: "0.5s",
 
     "&::before": {
-      content: "",
+      content: "''",
       position: "absolute",
       width: "30px",
       height: "3px",
-      background: "#fff",
+      background: "#fcfcfc",
       borderRadius: "5px",
-      transform: "translateX (10px)",
+      boxShadow: "0 2px 5px rgba(0, 0, 0, .2)",
+      transition: "0.5s",
+      top: "-10px",
     },
 
     "&::after": {
-      content: "'after'",
+      content: "''",
       position: "absolute",
       width: "30px",
       height: "3px",
-      background: "#fff",
+      background: "#fcfcfc",
       borderRadius: "5px",
-      transform: "translateY(10px)",
+      boxShadow: "0 2px 5px rgba(0, 0, 0, .2)",
+      transition: "0.5s",
+      top: "10px",
     },
-  },
-  activeHamburger: {
-    width: "30px",
-    height: "3px",
-    borderRadius: "5px",
-    transform: "translateX(-50px)",
-    background: "transparent",
-    transition: "all 0.5s ease-in-out",
-    "&::before": {},
-  },
-
-  sidenav: {
-    position: "fixed",
-    width: "100%",
-    height: "100vh",
-    background: "linear-gradient(150deg, #b1bfd8 0%, #667eaa 74%)",
-    transform: "translateX(100%)",
-    transition: "all 0.5s ease-in-out",
-  },
-
-  activateSidenav: {
-    position: "fixed",
-    width: "100%",
-    height: "100vh",
-    background: "linear-gradient(150deg, #b1bfd8 0%, #667eaa 74%)",
-    transform: "translateX(50%)",
-    transition: "all 0.5s ease-in-out",
-  },
-
-  ul: {
-    listStyleType: "none",
-    "& li": {
-      padding: "20px 0",
-    },
-  },
-
-  a: {
-    margin: "20px 0",
-    color: "white",
   },
 }));
 

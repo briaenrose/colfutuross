@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 
-export default function Graduandos() {
+const Graduandos = () => {
   return (
     <>
       <Navbar />
-      <div className="hola">
+      <div className='graduandos'>
         <h1>Graduandos</h1>
       </div>
     </>
   );
-}
+};
+
+export default Graduandos;

@@ -1,13 +1,15 @@
 import Link from "next/link";
 import Navbar from "../components/Navbar";
 
-export default function Convenios() {
+const Convenions = () => {
   return (
     <>
       <Navbar />
-      <div className="convenios">
+      <div className='convenios'>
         <h1>Convenios</h1>
       </div>
     </>
   );
-}
+};
+
+export default Convenios;
