@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 const Convenions = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='convenios'>
         <h1>Convenios</h1>
       </div>
@@ -12,4 +12,4 @@ const Convenions = () => {
   );
 };
 
-export default Convenios;
+export default Convenions;

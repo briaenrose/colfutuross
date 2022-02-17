@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 const Matriculas = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='matriculas'>
         <h1>Matriculas</h1>
       </div>

@@ -5,9 +5,8 @@ import Navbar from "../components/Navbar";
 const Sobrenosotros = () => {
   return (
     <>
-      <Navbar />
       <div className='sobrenosotros'>
-        <h1>Sobrenosotros</h1>
+        <h1>Sobre Nosotros</h1>
       </div>
     </>
   );

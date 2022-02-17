@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 const Servicios = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='servicios'>
         <h1>Servicios</h1>
       </div>

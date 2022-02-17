@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 const Portales = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='portales'>
         <h1>Portales</h1>
       </div>

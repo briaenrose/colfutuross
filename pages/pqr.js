@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 const Pqr = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='pqr'>
         <h1>PQR</h1>
       </div>
