@@ -7,10 +7,16 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import DirectionsBoatFilledRoundedIcon from "@mui/icons-material/DirectionsBoatFilledRounded";
+import DesignServicesRoundedIcon from "@mui/icons-material/DesignServicesRounded";
+import ConnectWithoutContactRoundedIcon from "@mui/icons-material/ConnectWithoutContactRounded";
+import AccessibilityNewRoundedIcon from "@mui/icons-material/AccessibilityNewRounded";
+import FiberNewRoundedIcon from "@mui/icons-material/FiberNewRounded";
+import ImportContactsRoundedIcon from "@mui/icons-material/ImportContactsRounded";
+import SupervisorAccountRoundedIcon from "@mui/icons-material/SupervisorAccountRounded";
+import LibraryAddCheckRoundedIcon from "@mui/icons-material/LibraryAddCheckRounded";
+import MoodRoundedIcon from "@mui/icons-material/MoodRounded";
 import IconButton from "@mui/material/IconButton";
-import HomeIcon from "@mui/icons-material/Home";
 import MenuIcon from "@mui/icons-material/Menu";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
@@ -48,7 +54,7 @@ export default function Navbar() {
       <Link href={"/"}>
         <ListItem button>
           <ListItemIcon>
-            <HomeIcon />
+            <DirectionsBoatFilledRoundedIcon />
           </ListItemIcon>
           <ListItemText primary='Inicio' />
         </ListItem>
@@ -56,7 +62,7 @@ export default function Navbar() {
       <Link href={"/sobrenosotros"}>
         <ListItem button>
           <ListItemIcon>
-            <InboxIcon />
+            <SupervisorAccountRoundedIcon />
           </ListItemIcon>
           <ListItemText primary='Nosotros' />
         </ListItem>
@@ -64,14 +70,14 @@ export default function Navbar() {
       <Link href={"/servicios"}>
         <ListItem button>
           <ListItemIcon>
-            <MailIcon />
+            <DesignServicesRoundedIcon />
           </ListItemIcon>
           <ListItemText primary='Servicios' />
         </ListItem>
       </Link>
       <ListItemButton onClick={() => setOpenalumni(!openalumni)}>
         <ListItemIcon>
-          <InboxIcon />
+          <AccessibilityNewRoundedIcon />
         </ListItemIcon>
         <ListItemText primary='Alumni' />
         {openalumni ? <ExpandLess /> : <ExpandMore />}
@@ -107,7 +113,7 @@ export default function Navbar() {
       <Link href={"/matriculas"}>
         <ListItem button>
           <ListItemIcon>
-            <MailIcon />
+            <LibraryAddCheckRoundedIcon />
           </ListItemIcon>
           <ListItemText primary='Matriculas' />
         </ListItem>
@@ -115,7 +121,7 @@ export default function Navbar() {
       <Link href={"/admisiones"}>
         <ListItem button>
           <ListItemIcon>
-            <MailIcon />
+            <MoodRoundedIcon />
           </ListItemIcon>
           <ListItemText primary='Admisiones' />
         </ListItem>
@@ -123,7 +129,7 @@ export default function Navbar() {
       <Link href={"/portales"}>
         <ListItem button>
           <ListItemIcon>
-            <MailIcon />
+            <ImportContactsRoundedIcon />
           </ListItemIcon>
           <ListItemText primary='Portales' />
         </ListItem>
@@ -131,14 +137,14 @@ export default function Navbar() {
       <Link href={"/noticias"}>
         <ListItem button>
           <ListItemIcon>
-            <MailIcon />
+            <FiberNewRoundedIcon />
           </ListItemIcon>
           <ListItemText primary='Noticias' />
         </ListItem>
       </Link>
       <ListItemButton onClick={handleClick}>
         <ListItemIcon>
-          <InboxIcon />
+          <ConnectWithoutContactRoundedIcon />
         </ListItemIcon>
         <ListItemText primary='Contáctanos' />
         {open ? <ExpandLess /> : <ExpandMore />}
@@ -182,8 +188,8 @@ export default function Navbar() {
           </IconButton>
         </Box>
 
-        <Drawer anchor={"right"} open={drawer} onClose={toggleDrawer(false)}>
-          {list("right")}
+        <Drawer anchor={"left"} open={drawer} onClose={toggleDrawer(false)}>
+          {list("left")}
         </Drawer>
       </React.Fragment>
     </div>
