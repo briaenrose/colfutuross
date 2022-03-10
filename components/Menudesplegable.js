@@ -61,7 +61,10 @@ const Menudesplegable = (props) => {
 
   return (
     <>
-      <ListItemButton onClick={handleClick}>
+      <ListItemButton
+        sx={{ mx: "auto", textAlign: "center", borderRadius: 2 }}
+        onClick={handleClick}
+      >
         <ListItemText primary={props.title} />
       </ListItemButton>
       <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

@@ -1,16 +1,20 @@
-import React, { useState } from "react";
-import Link from "next/link";
-//import styles from "./style/navbar.module.css";
-import Image from "next/image";
-import Logo from "../public/Images/Logo.png";
-import { makeStyles } from "@mui/styles";
+import React from "react";
+import Head from "next/head";
+import Boatbackground from "../components/Boatbackground";
 
-export default function Inicio() {
+function IndexPage() {
   return (
-    <>
-      <div className='inicio'>
-        <h1>Inicio</h1>
-      </div>
-    </>
+    <div>
+      <Head>
+        <title>My page title</title>
+        <meta property='og:title' content='My page title' key='title' />
+      </Head>
+      <Head>
+        <meta property='og:title' content='My new title' key='title' />
+      </Head>
+      <Boatbackground />
+    </div>
   );
 }
+
+export default IndexPage;

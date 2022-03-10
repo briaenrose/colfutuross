@@ -1,10 +1,10 @@
 import "../styles/globals.css";
-import ResponsiveAppBar from "../components/ResponsiveAppBar";
+import Navbar from "../components/Navbar";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <ResponsiveAppBar />
+      <Navbar />
 
       <Component {...pageProps} />
     </>
